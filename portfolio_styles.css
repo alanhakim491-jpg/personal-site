@@ -862,21 +862,23 @@ form textarea {
     background-color: rgba(239, 68, 68, 0.2);
   }
 
+  .options-links::after {
+    left: 15%;
+    width: 0;
+  }
+
   .options-links.active-links::after {
-    background-color: rgba(239, 68, 68, 0.2);
+    width: 50%;
+    left: 25%;
   }
 
   .options-content {
     padding-left: 3% !important;
     padding-right: 3% !important;
-    margin-left: 2%;
-    margin-right: 2%;
   }
 
   .options-content ul li {
     font-size: 15px;
-    margin-left: 4%;
-    margin-right: 4%;
   }
 
   .options-content ul li span {
@@ -1118,6 +1120,16 @@ form textarea {
     font-size: 14px;
   }
 
+  .options-links::after {
+    left: 20%;
+    width: 0;
+  }
+
+  .options-links.active-links::after {
+    width: 40%;
+    left: 30%;
+  }
+
   .options-content {
     padding-left: 2% !important;
     padding-right: 2% !important;
@@ -1345,14 +1357,8 @@ form textarea {
     font-size: 13px;
   }
 
-  .options-links::after {
-    left: 25%;
-    width: 0;
-  }
-
   .options-links.active-links::after {
-    width: 35%;
-    left: 32.5%;
+    background-color: rgba(239, 68, 68, 0.2);
   }
 
   .options-content ul li {
