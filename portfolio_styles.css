@@ -408,7 +408,7 @@ header > h1::first-letter {
 
 .life-list > .item:hover {
   background-color: #EF4444;
-  transform: translateY(-10px) translateX(10px);
+  transform: translateY(-10px);
 }
 
 .dark.life-list > .item:hover {
