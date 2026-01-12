@@ -875,10 +875,14 @@ form textarea {
   .options-content {
     padding-left: 3% !important;
     padding-right: 3% !important;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .options-content ul li {
     font-size: 15px;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
   .options-content ul li span {
