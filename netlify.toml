@@ -1,0 +1,5 @@
+[build]
+  # No build command needed for static site
+  publish = "."
+  
+# Note: Netlify will automatically serve index.html as the default page
