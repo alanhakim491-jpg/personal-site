@@ -868,7 +868,7 @@ form textarea {
   }
 
   .options-links.active-links::after {
-    width: 50%;
+    width: 20%;
     left: 25%;
   }
 
