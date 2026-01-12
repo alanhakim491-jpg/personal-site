@@ -263,11 +263,16 @@
           <a href="./certificates-CV/certificates-CVs/Alan_Hakim_CV.pdf" target="_blank" class="button dark:text-slate-800 dark:border-slate-800 hover:border-slate-800 hover:text-slate-800 hover:ring-2 hover:ring-slate-800 dark:hover:border-[#FDF6E3] dark:hover:text-[#FDF6E3] dark:hover:ring-2 dark:hover:ring-[#FDF6E3] transition-all animate-pulse hover:animate-none duration-300">See Me</a>
         </div>
         <div class="right-side text-left ml-[5%] sm:text-right">
-          <form>
-	          <input type="text" name="Name" placeholder="Full Name" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
-	          <input type="email" name="Email" placeholder="Your Email" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
-	          <textarea rows="5" cols="42" placeholder="Tell Me!" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300"></textarea>
-            <input type="submit" name="SubmitBtn" class="w-[40%] px-[3%] py-[2%] rounded-[10px] text-base cursor-pointer bg-[#EAD9B8] dark:text-[#FDF6E3] dark:bg-slate-900 hover:shadow-xl hover:ring-2 hover:ring-slate-800 dark:hover:ring-[#FDF6E3] ease-in-out transition-all duration-300">
+          <form name="contact" netlify netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display: none;">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+	          <input type="text" name="name" id="name" placeholder="Full Name" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
+	          <input type="email" name="email" id="email" placeholder="Your Email" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
+	          <textarea name="message" id="message" rows="5" cols="42" placeholder="Tell Me!" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required></textarea>
+            <div id="form-status" class="mt-2 text-sm"></div>
+            <input type="submit" name="SubmitBtn" id="submit-btn" value="Send Message" class="w-[40%] px-[3%] py-[2%] rounded-[10px] text-base cursor-pointer bg-[#EAD9B8] dark:text-[#FDF6E3] dark:bg-slate-900 hover:shadow-xl hover:ring-2 hover:ring-slate-800 dark:hover:ring-[#FDF6E3] ease-in-out transition-all duration-300">
 	        </form>
          </div>
       </div>

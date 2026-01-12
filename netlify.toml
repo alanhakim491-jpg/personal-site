@@ -3,3 +3,11 @@
   publish = "."
   
 # Note: Netlify will automatically serve index.html as the default page
+
+# Netlify Forms configuration
+# The contact form will automatically be detected and processed by Netlify
+# To configure email notifications:
+# 1. Go to your Netlify dashboard
+# 2. Navigate to Site settings > Forms > Form notifications
+# 3. Add a notification for the "contact" form
+# 4. Set the recipient email to: alanhakim491@gmail.com
