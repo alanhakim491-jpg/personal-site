@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

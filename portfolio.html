@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <script src="portfolio_script.js"></script>
+    <link rel="icon" type="image/png" href="icons8-amplifier-94.png">
+    <link href="portfolio_styles.css" rel="stylesheet" /> 
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://kit.fontawesome.com/f19f437651.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="dark:text-[#FDF6E3] dark:bg-slate-900">
+    <div class="first-page">
+      <div class="flex sm:flex-col items-center">
+        <header>
+          <h1>Alan Hakim</h1>
+          <div class="me-desc">
+            <p>Angular | NestJS | PostgreSQL</p>
+            <h1>My name is <span>Alan Hakim</span>, Lebanese <br>Junior SWE, Glad to have you!</h1>
+          </div>
+        </header>
+        <div id="header"></div>
+      </div>
+    </div>
+    <div class="section-bar">
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="tools bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]">
+        <ul id="navbar" class="bg-[#F5EAD0] dark:bg-slate-800">
+          <li class="bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]"><a href="#home" class="dark:bg-slate-800 dark:text-[#FDF6E3]"><strong>Home</strong></a></li>
+          <li class="bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]"><a href="#about-me" class="dark:bg-slate-800 dark:text-[#FDF6E3]"><strong>About</strong></a></li>
+          <li class="bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]"><a href="#portfolio" class="dark:bg-slate-800 dark:text-[#FDF6E3]"><strong>Portfolio</strong></a></li>
+          <li class="bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]"><a href="#my-life" class="dark:bg-slate-800 dark:text-[#FDF6E3]"><strong>Life</strong></a></li>
+          <li class="bg-[#F5EAD0] dark:bg-slate-800 dark:text-[#FDF6E3]"><a href="#contact" class="dark:bg-slate-800 dark:text-[#FDF6E3]"><strong>Contact</strong></a></li>
+        </ul>
+      </nav>
+    </div>
+    <section id="about-me">
+      <div class="me-and-cat md:flex-row lg:flex-row">
+        <div class="me">
+          <h1>About Me</h1>
+          <br>
+          <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isn't what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.<br><span style="color:#FF4444">I also like cats, here's my cat!</span></p>
+        </div>
+        <a href=https://en.wikipedia.org/wiki/Turkish_Angora target="_blank"><img src="./assets/mycat-pic.JPG" alt="this-my-cat" class="my-cat w-full md:w-full lg:mt-[25%] ml-[5%] lg:ml-0"></a>
+      </div>
+      <hr class="mt-6 border-2 border-red-500">
+      <div class="things-done md:flex-col lg:flex-col mx-6">
+        <div class="options md:flex-row lg:flex-row">
+          <h2 class="options-links active-links text-3xl text-center" onclick="openTab('skills')">Skills <i class="fa-solid fa-code"></i></h2>
+          <h2 class="options-links text-3xl text-center" onclick="openTab('experience')">Experience <i class="fa-solid fa-briefcase"></i></h2>
+          <h2 class="options-links text-3xl text-center" onclick="openTab('education')">Education <i class="fa-solid fa-school"></i></h2>
+        </div>
+        <div class="inside-options">
+          <div class="options-content active-tab pl-2 md:pl-32 md:pr-32" id="skills">
+            <ul class="flex flex-row flex-wrap gap-2 justify-center text-xl">
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <a href="/certificates-CV/certificates-CVs/HTML-Certificate.pdf" target="_blank"><i class="fa-brands fa-html5 text-2xl"></i></a>
+                <p>HTML</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <a href="Projects\portfolio-website\certificates-CV\certificates-CVs\CSS-Certificate.pdf" target="_blank"><i class="fa-brands fa-css3-alt text-2xl"></i></a>
+                <p>CSS</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <a href="C:\Users\Alan M\OneDrive\Desktop\CVs and Work\Certificates\JS Certificate.pdf" target="_blank"><i class="fa-brands fa-square-js text-2xl"></i></i></a>
+                <p>JavaScript</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-angular text-3xl"></i>
+                <p>Angular</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="lni lni-postgresql text-3xl mr-1"></i>
+                <p>PostgreSQL</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="lni lni-prisma text-3xl"></i>
+                <p>Prisma</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="devicon-nestjs-original text-3xl mr-1"></i>
+                <p>NestJS</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-6 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-sass text-2xl mr-1"></i>
+                <p>SCSS</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="lni lni-typescript text-3xl"></i>
+                <p>TypeScript</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-node-js text-2xl"></i>
+                <p>Node.JS</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-4 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-docker text-2xl mr-1"></i>
+                <p>Docker</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-react text-2xl"></i>
+                <p>React / React Native</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-laravel text-2xl"></i>
+                <p>Laravel</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-php text-3xl mr-1"></i>
+                <p>PHP</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="lni lni-mysql text-3xl"></i>
+                <p>MySQL</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="lni lni-tailwindcss text-3xl mr-1"></i>
+                <p>Tailwind</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl hover:shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-brands fa-square-github text-2xl"></i>
+                <p>Git & GitHub</p>
+              </li>
+              <li class="m-2 text-[#F5EAD0] dark:text-slate-900 duration-500 ease-in-out bg-red-500 px-5 h-16 rounded-3xl shadow-xl hover:ring-white hover:ring-1 after:bg-[#F5EAD0] dark:after:bg-slate-900">
+                <i class="fa-solid fa-terminal text-2xl"></i>
+                <p>Bash</p>
+              </li>
+            </ul>
+          </div>
+          <div class="options-content pl-4 md:pl-16" id="experience">
+            <ul class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-y-12">
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Full Stack Developer</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Freelance 11/2025-present</p>
+              </li>
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Mobile App Developer (Internship)</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Xtnd 11/2025-present</p>
+              </li>
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Operations Manager</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Hakim Co 2021-2025</p>
+              </li>
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Employee</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Hakim Co 07/2017-08/2017</p>
+              </li>            
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Lab Intern</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Pharmadex 06/2017-07/2017</p>
+              </li>
+            </ul>
+          </div>
+          <div class="options-content pl-4 md:pl-16" id="education">
+            <ul class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-y-20 md:flex-grow-1">
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Bachelors in Pharmacy</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">Lebanese University 2025-present</p>
+              </li>
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>Bachelors in Chemistry</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">AUB 2019-2022</p>
+              </li> 
+              <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                <p><span>International Baccaleaurate</span></p>
+                <p class="text-slate-900 dark:text-[#FDF6E3]">International College 2019</p>
+              </li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-bar2"></div>
+    <section id="portfolio">
+      <div class="work">
+        <h1 class="work-title">My Work</h1>
+        <br>
+        <h3 class="text-xl">Here you may find what I've done <span class="text-red-500">(so far!)</span></h3>
+        <div class="list-work grid sm:grid-cols-1 lg:grid-cols-3 gap-7">
+          <div class="works">
+	          <img src="./assets/tk-app.png">
+	          <div class="caption-over">
+	            <h3 class="text-lg text-[#F5EAD0] dark:text-slate-800"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\restaurant_menu.html" target="_blank">Ecommerce App<i class="fa-solid fa-up-right-from-square"></i></a></h3>
+	            <p class="text-[#F5EAD0] dark:text-slate-800">Ecommerce application for a local clothing store, built with Angular, Tailwind CSS and SCSS, NestJS, and PostgreSQL</p>
+              <br>
+              <h4 class="font-bold text-sm text-slate-800 bg-[#F5EAD0] dark:text-white dark:bg-slate-800 px-4 py-1 rounded-lg hover:ring-2 hover:ring-slate-800 dark:hover:ring-white hover:scale-110 transistion-all duration-500">Angular | Tailwind CSS | SCSS | NestJS | PostgreSQL</h4>
+	          </div>
+          </div>
+          <div class="works">
+	          <img src="./assets/weather-pic.png">
+	          <div class="caption-over">
+	            <h3 class="text-lg text-[#F5EAD0] dark:text-slate-800"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\weather-app\weather-app.html" target="_blank">Weather App<i class="fa-solid fa-up-right-from-square"></i></a></h3>
+	            <p class="text-[#F5EAD0] dark:text-slate-800">My rendition of a weather app</p>
+              <br>
+              <h2 class="font-bold text-lg text-slate-800 bg-[#F5EAD0] dark:text-white dark:bg-slate-800 px-4 py-1 rounded-lg hover:ring-2 hover:ring-slate-800 dark:hover:ring-white hover:scale-110 transition-all duration-500"><a href="https://github.com/alanhakim491-jpg/dex-repo/tree/main/Projects/weather-app" target="_blank">HTML | CSS | JS | Tailwind CSS</a></h2>
+	          </div>
+          </div>
+          <div class="works">
+	          <img src="./assets/cat-app_pic.png">
+	          <div class="caption-over">
+	            <h3 class="text-lg text-[#F5EAD0] dark:text-slate-800"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\cat-app\cat-facts.html" target="_blank">Cat App<i class="fa-solid fa-up-right-from-square"></i></a></h3>
+	            <p class="text-[#F5EAD0] dark:text-slate-800">A fun app that generates random cat facts upon request. My first practical use of JavaScript!</p>
+              <br>
+              <h2 class="font-bold text-lg text-slate-800 bg-[#F5EAD0] dark:text-white dark:bg-slate-800 px-4 py-1 rounded-lg hover:ring-2 hover:ring-slate-800 dark:hover:ring-white hover:scale-110 transition-all duration-500"><a href="https://github.com/alanhakim491-jpg/dex-repo/tree/main/Projects/cat-app" target="_blank">HTML | CSS | JS | Tailwind CSS</a></h2>
+	          </div>
+          </div>
+        </div>
+      <br><hr><br>
+      </div>
+    </section>
+    <section id="my-life">
+      <div class="life">
+        <h1>My Life</h1>
+	      <br>
+	      <h3 class="text-xl">Aside from Web and Work, there are other parts to my life</h3>
+	      <div class="life-list grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+	        <div class="item bg-[#F5EAD0] hover:text-[#F5EAD0] dark:bg-slate-800 dark:hover:text-slate-800">
+	          <a href="https://www.instagram.com/stories/highlights/17894849719787674/" target="_blank"><i class="fa-solid fa-music text-red-500 hover:text-[#F5EAD0] dark:hover:text-slate-800"></i></a>
+	          <a href="https://www.instagram.com/stories/highlights/17967783934676364/" target="_blank"><h2 class="text-[32px] mb-4">Music</h2></a>
+	          <p>Bass player and active member in the Lebanese music scene, bands of mine include Lazeez and 2 by Four</p>
+	        </div>
+	        <div class="item bg-[#F5EAD0] hover:text-[#F5EAD0] dark:bg-slate-800 dark:hover:text-slate-800">
+	          <a href="https://www.instagram.com/stories/highlights/17922776065901037/" target="_blank"><i class="fa-solid fa-dumbbell text-red-500 hover:text-[#F5EAD0] dark:hover:text-slate-800"></i></a>
+	          <a href="https://www.instagram.com/stories/highlights/18216802000225988/" target="_blank"><h2 class="text-[32px] mb-4">Sports</h2></a>
+            <p>Adrenaline junkie and gym-goer, sports of mine include snowboarding, parkour, swimming, olympic weightlifting and powerlifting</p>
+          </div>
+	        <div class="item bg-[#F5EAD0] hover:text-[#F5EAD0] dark:bg-slate-800 dark:hover:text-slate-800">
+	          <a href="https://www.instagram.com/stories/highlights/17867436469864169/" target="_blank"><i class="fa-solid fa-tree text-red-500 dark:hover:text-slate-800 hover:text-[#F5EAD0]"></i></a>
+	          <a href="https://www.instagram.com/stories/highlights/17867436469864169/" target="_blank"><h2 class="text-[32px] mb-4">Outdoors</h2></a>
+	          <p>Hiking, camping, cliff jumping, and all kinds of adventures, the outdoors is what id consider my favorite part of this world</p>
+	        </div>
+	      </div>
+        <br><hr><br>
+      </div>
+    </section>
+    <footer>
+      <div id="contact" class="dark:text-slate-800 flex-col md:flex-row lg:flex-row ">
+        <div class="left-side dark:text-slate-800">
+          <h3 class="font-bold text-lg">Contact Me</h3>
+          <div class="contact-info flex flex-col gap-4 sm:gap-2 sm:flex-col md:flex-col lg:flex-row">
+            <a href="tel:"><i class="fa-solid fa-phone"></i>: +961 71 558810</a>
+            <a href="mailto:"><i class="fa-solid fa-envelope"></i>: alanhakim491@gmail.com</a>
+          </div>
+          <hr class="border-none h-0.5 w-[100%] bg-[#FDF6E3] dark:bg-slate-800 my-[18px] dark:text-slate-800">
+          <h3 class="font-bold text-lg">Socials</h3>
+          <a href="https://www.instagram.com/am.hakim13/" target="_blank">
+            <i class="fa-brands fa-instagram my-icons dark:text-slate-900" id="insta-gram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alan-mounir-hakim-b1b72721a/" target="_blank">
+            <i class="fa-brands fa-linkedin my-icons dark:text-slate-900" id="linked-in"></i>
+          </a>
+          <a href="https://github.com/alanhakim491-jpg" target="_blank">
+            <i class="fa-brands fa-square-github my-icons dark:text-slate-900" id="git-hub"></i>
+          </a>   
+          <br><br>
+          <a href="./certificates-CV/certificates-CVs/Alan_Hakim_CV.pdf" target="_blank" class="button dark:text-slate-800 dark:border-slate-800 hover:border-slate-800 hover:text-slate-800 hover:ring-2 hover:ring-slate-800 dark:hover:border-[#FDF6E3] dark:hover:text-[#FDF6E3] dark:hover:ring-2 dark:hover:ring-[#FDF6E3] transition-all animate-pulse hover:animate-none duration-300">See Me</a>
+        </div>
+        <div class="right-side text-left ml-[5%] sm:text-right">
+          <form>
+	          <input type="text" name="Name" placeholder="Full Name" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
+	          <input type="email" name="Email" placeholder="Your Email" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300" required>
+	          <textarea rows="5" cols="42" placeholder="Tell Me!" class="dark:bg-slate-800 hover:shadow-xl focus:ring-2 focus:ring-slate-800 dark:focus:ring-[#FDF6E3] ease-in-out transition-all duration-300"></textarea>
+            <input type="submit" name="SubmitBtn" class="w-[40%] px-[3%] py-[2%] rounded-[10px] text-base cursor-pointer bg-[#EAD9B8] dark:text-[#FDF6E3] dark:bg-slate-900 hover:shadow-xl hover:ring-2 hover:ring-slate-800 dark:hover:ring-[#FDF6E3] ease-in-out transition-all duration-300">
+	        </form>
+         </div>
+      </div>
+    </footer>
+    <script src="./toolbar-bundle.js" defer></script>
+  </body>
+</html>
