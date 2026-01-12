@@ -868,8 +868,7 @@ form textarea {
   }
 
   .options-links.active-links::after {
-    width: 50%;
-    left: 25%;
+    background-color: rgba(239, 68, 68, 0.2);
   }
 
   .options-content {
@@ -1127,11 +1126,6 @@ form textarea {
   .options-links::after {
     left: 20%;
     width: 0;
-  }
-
-  .options-links.active-links::after {
-    width: 20%;
-    left: 30%;
   }
 
   .options-content {
