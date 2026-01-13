@@ -576,6 +576,18 @@ form textarea {
     font-size: 13px;
   }
 
+  /* Title h3 (first h3) - make larger on mobile */
+  .caption-over > h3:first-of-type {
+    font-size: 1.1rem !important;
+    margin-bottom: 12px;
+  }
+
+  /* Tech stack h3 (second h3 with bg) - make smaller on mobile */
+  .caption-over > h3.font-bold {
+    font-size: 0.7rem !important;
+    padding: 6px 10px !important;
+  }
+
   /* First page container */
   .first-page {
     overflow-x: hidden;
@@ -1199,6 +1211,18 @@ form textarea {
     font-size: 12px;
   }
 
+  /* Title h3 (first h3) - make larger on small mobile */
+  .caption-over > h3:first-of-type {
+    font-size: 1rem !important;
+    margin-bottom: 10px;
+  }
+
+  /* Tech stack h3 (second h3 with bg) - make smaller on small mobile */
+  .caption-over > h3.font-bold {
+    font-size: 0.65rem !important;
+    padding: 5px 8px !important;
+  }
+
   /* Life section */
   .life {
     margin-left: 15px;
@@ -1383,6 +1407,18 @@ form textarea {
 
   .caption-over {
     font-size: 11px;
+  }
+
+  /* Title h3 (first h3) - make larger on very small mobile */
+  .caption-over > h3:first-of-type {
+    font-size: 0.95rem !important;
+    margin-bottom: 8px;
+  }
+
+  /* Tech stack h3 (second h3 with bg) - make smaller on very small mobile */
+  .caption-over > h3.font-bold {
+    font-size: 0.6rem !important;
+    padding: 4px 6px !important;
   }
 
   .options-links::after {
