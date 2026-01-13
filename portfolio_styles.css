@@ -354,7 +354,7 @@ header > h1::first-letter {
   transition: height 0s;
 }
 
-.caption-over > h2 {
+.caption-over > h3 {
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -574,18 +574,6 @@ form textarea {
 @media screen and (max-width: 768px) {
   .caption-over {
     font-size: 13px;
-  }
-
-  /* Title h2 (first title) - make larger on mobile */
-  .caption-over > h2:first-of-type {
-    font-size: 1.35rem !important;
-    margin-bottom: 12px;
-  }
-
-  /* Tech stack h3 (second h3 with bg) - make smaller on mobile */
-  .caption-over > h3.font-bold {
-    font-size: 0.7rem !important;
-    padding: 6px 10px !important;
   }
 
   /* First page container */
@@ -895,9 +883,11 @@ form textarea {
   }
 
   .options-content {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-    text-align: center;
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .options-content ul li {
@@ -1160,9 +1150,11 @@ form textarea {
   }
 
   .options-content {
-    padding-left: 2% !important;
-    padding-right: 2% !important;
-    text-align: center;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .options-content ul li {
@@ -1211,18 +1203,6 @@ form textarea {
 
   .caption-over {
     font-size: 12px;
-  }
-
-  /* Title h2 (first title) - make larger on small mobile */
-  .caption-over > h2:first-of-type {
-    font-size: 1.4rem !important;
-    margin-bottom: 10px;
-  }
-
-  /* Tech stack h3 (second h3 with bg) - make smaller on small mobile */
-  .caption-over > h3.font-bold {
-    font-size: 0.65rem !important;
-    padding: 5px 8px !important;
   }
 
   /* Life section */
@@ -1409,18 +1389,6 @@ form textarea {
 
   .caption-over {
     font-size: 11px;
-  }
-
-  /* Title h2 (first title) - make larger on very small mobile */
-  .caption-over > h2:first-of-type {
-    font-size: 1.3rem !important;
-    margin-bottom: 8px;
-  }
-
-  /* Tech stack h3 (second h3 with bg) - make smaller on very small mobile */
-  .caption-over > h3.font-bold {
-    font-size: 0.6rem !important;
-    padding: 4px 6px !important;
   }
 
   .options-links::after {
