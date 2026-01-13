@@ -359,6 +359,13 @@ header > h1::first-letter {
   margin-bottom: 20px;
 }
 
+/* Explicit style for caption title h2 (used in HTML) */
+.caption-over > h2 {
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
 .caption-over > p {
   max-width: 80%;
 }
@@ -574,6 +581,11 @@ form textarea {
 @media screen and (max-width: 768px) {
   .caption-over {
     font-size: 13px;
+  }
+
+  .caption-over > h2 {
+    font-size: 1.35rem !important;
+    margin-bottom: 12px;
   }
 
   /* First page container */
@@ -888,6 +900,16 @@ form textarea {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .options-content ul {
+    justify-content: center;
+    gap: 6px !important;
+  }
+
+  .options-content ul li {
+    margin: 4px !important;
   }
 
   .options-content ul li {
@@ -1155,6 +1177,16 @@ form textarea {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .options-content ul {
+    justify-content: center;
+    gap: 5px !important;
+  }
+
+  .options-content ul li {
+    margin: 3px !important;
   }
 
   .options-content ul li {
@@ -1203,6 +1235,11 @@ form textarea {
 
   .caption-over {
     font-size: 12px;
+  }
+
+  .caption-over > h2 {
+    font-size: 1.45rem !important;
+    margin-bottom: 10px;
   }
 
   /* Life section */
@@ -1389,6 +1426,11 @@ form textarea {
 
   .caption-over {
     font-size: 11px;
+  }
+
+  .caption-over > h2 {
+    font-size: 1.35rem !important;
+    margin-bottom: 8px;
   }
 
   .options-links::after {
