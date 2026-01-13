@@ -588,6 +588,12 @@ form textarea {
     margin-bottom: 12px;
   }
 
+  /* Tech stack pill (h3) */
+  .caption-over > h3 {
+    font-size: 0.7rem !important;
+    padding: 6px 10px !important;
+  }
+
   /* First page container */
   .first-page {
     overflow-x: hidden;
@@ -1242,6 +1248,12 @@ form textarea {
     margin-bottom: 10px;
   }
 
+  /* Tech stack pill (h3) */
+  .caption-over > h3 {
+    font-size: 0.6rem !important;
+    padding: 5px 9px !important;
+  }
+
   /* Life section */
   .life {
     margin-left: 15px;
@@ -1431,6 +1443,12 @@ form textarea {
   .caption-over > h2 {
     font-size: 1.35rem !important;
     margin-bottom: 8px;
+  }
+
+  /* Tech stack pill (h3) */
+  .caption-over > h3 {
+    font-size: 0.55rem !important;
+    padding: 4px 8px !important;
   }
 
   .options-links::after {
