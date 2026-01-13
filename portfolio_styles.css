@@ -257,6 +257,9 @@ header > h1::first-letter {
 
 .options-content {
   display: none;
+  .w-details {
+    font-size: 20px;
+  }
 }
 
 .options-content.active-tab {
