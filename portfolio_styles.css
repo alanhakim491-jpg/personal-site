@@ -354,7 +354,7 @@ header > h1::first-letter {
   transition: height 0s;
 }
 
-.caption-over > h3 {
+.caption-over > h2 {
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -576,9 +576,9 @@ form textarea {
     font-size: 13px;
   }
 
-  /* Title h3 (first h3) - make larger on mobile */
-  .caption-over > h3:first-of-type {
-    font-size: 1.1rem !important;
+  /* Title h2 (first title) - make larger on mobile */
+  .caption-over > h2:first-of-type {
+    font-size: 1.25rem !important;
     margin-bottom: 12px;
   }
 
@@ -1211,9 +1211,9 @@ form textarea {
     font-size: 12px;
   }
 
-  /* Title h3 (first h3) - make larger on small mobile */
-  .caption-over > h3:first-of-type {
-    font-size: 1rem !important;
+  /* Title h2 (first title) - make larger on small mobile */
+  .caption-over > h2:first-of-type {
+    font-size: 1.15rem !important;
     margin-bottom: 10px;
   }
 
@@ -1409,9 +1409,9 @@ form textarea {
     font-size: 11px;
   }
 
-  /* Title h3 (first h3) - make larger on very small mobile */
-  .caption-over > h3:first-of-type {
-    font-size: 0.95rem !important;
+  /* Title h2 (first title) - make larger on very small mobile */
+  .caption-over > h2:first-of-type {
+    font-size: 1.05rem !important;
     margin-bottom: 8px;
   }
 
