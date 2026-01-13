@@ -578,7 +578,7 @@ form textarea {
 
   /* Title h2 (first title) - make larger on mobile */
   .caption-over > h2:first-of-type {
-    font-size: 1.25rem !important;
+    font-size: 1.35rem !important;
     margin-bottom: 12px;
   }
 
@@ -897,6 +897,7 @@ form textarea {
   .options-content {
     padding-left: 3% !important;
     padding-right: 3% !important;
+    text-align: center;
   }
 
   .options-content ul li {
@@ -1161,6 +1162,7 @@ form textarea {
   .options-content {
     padding-left: 2% !important;
     padding-right: 2% !important;
+    text-align: center;
   }
 
   .options-content ul li {
@@ -1213,7 +1215,7 @@ form textarea {
 
   /* Title h2 (first title) - make larger on small mobile */
   .caption-over > h2:first-of-type {
-    font-size: 1.15rem !important;
+    font-size: 1.4rem !important;
     margin-bottom: 10px;
   }
 
@@ -1411,7 +1413,7 @@ form textarea {
 
   /* Title h2 (first title) - make larger on very small mobile */
   .caption-over > h2:first-of-type {
-    font-size: 1.05rem !important;
+    font-size: 1.3rem !important;
     margin-bottom: 8px;
   }
 
