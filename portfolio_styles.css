@@ -1509,3 +1509,255 @@ form textarea {
     font-size: 10px;
   }
 }
+
+/* ============================================
+   LARGE SCREEN RESPONSIVE STYLES
+   ============================================ */
+
+/* Large monitors (1920px and above) */
+@media screen and (min-width: 1920px) {
+  /* Container max-width to prevent content from spreading too wide */
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  /* Header adjustments */
+  header > h1 {
+    font-size: 15vw;
+  }
+
+  .me-desc {
+    font-size: 1.8vw;
+  }
+
+  /* About section */
+  .me > h1 {
+    font-size: 320%;
+  }
+
+  .me > p {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .options-links {
+    font-size: 1.4rem;
+  }
+
+  .options-content ul li {
+    font-size: 1.1rem;
+  }
+
+  .options-content ul li span {
+    font-size: 1.3rem;
+  }
+
+  .w-details {
+    font-size: 1.1rem;
+  }
+
+  /* Portfolio section */
+  .work-title {
+    font-size: 280%;
+  }
+
+  .list-work {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vw;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .works > img {
+    height: 35vh;
+  }
+
+  .caption-over {
+    font-size: 16px;
+  }
+
+  .caption-over > h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .caption-over > h3 {
+    font-size: 0.85rem !important;
+    padding: 8px 14px !important;
+  }
+
+  /* Life section */
+  .life > h1 {
+    font-size: 280%;
+  }
+
+  .life-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .life-list > .item {
+    padding: 50px;
+    font-size: 1.1rem;
+  }
+
+  .life-list > .item > h2 {
+    font-size: 36px;
+  }
+
+  /* Contact section */
+  footer {
+    padding: 40px 0;
+  }
+
+  .left-side h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-info {
+    font-size: 1.1rem;
+  }
+
+  .contact-info > a {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .my-icons {
+    font-size: 26px;
+  }
+
+  form input, form textarea {
+    font-size: 1.1rem;
+    padding: 12px 14px;
+  }
+
+  #submit-btn {
+    font-size: 1.1rem !important;
+    padding: 12px 24px !important;
+  }
+}
+
+/* Extra large monitors (2560px and above) */
+@media screen and (min-width: 2560px) {
+  body {
+    max-width: 2400px;
+  }
+
+  header > h1 {
+    font-size: 13vw;
+  }
+
+  .me-desc {
+    font-size: 1.6vw;
+  }
+
+  /* About section */
+  .me > h1 {
+    font-size: 360%;
+  }
+
+  .me > p {
+    font-size: 1.3rem;
+  }
+
+  .options-links {
+    font-size: 1.5rem;
+  }
+
+  .options-content ul li {
+    font-size: 1.2rem;
+  }
+
+  .options-content ul li span {
+    font-size: 1.4rem;
+  }
+
+  .w-details {
+    font-size: 1.2rem;
+  }
+
+  /* Portfolio section */
+  .work-title {
+    font-size: 320%;
+  }
+
+  .list-work {
+    grid-gap: 5vw;
+    max-width: 2200px;
+  }
+
+  .works > img {
+    height: 38vh;
+  }
+
+  .caption-over {
+    font-size: 18px;
+  }
+
+  .caption-over > h2 {
+    font-size: 2rem !important;
+  }
+
+  .caption-over > h3 {
+    font-size: 0.9rem !important;
+    padding: 10px 16px !important;
+  }
+
+  /* Life section */
+  .life > h1 {
+    font-size: 320%;
+  }
+
+  .life-list {
+    grid-gap: 70px;
+    max-width: 2200px;
+  }
+
+  .life-list > .item {
+    padding: 60px;
+    font-size: 1.2rem;
+  }
+
+  .life-list > .item > h2 {
+    font-size: 40px;
+  }
+
+  /* Contact section */
+  .left-side h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    font-size: 1.2rem;
+  }
+
+  .contact-info > a {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+
+  .my-icons {
+    font-size: 28px;
+  }
+
+  form input, form textarea {
+    font-size: 1.2rem;
+    padding: 14px 16px;
+  }
+
+  #submit-btn {
+    font-size: 1.2rem !important;
+    padding: 14px 28px !important;
+  }
+}
