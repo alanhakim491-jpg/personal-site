@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('submit-btn');
     
-    if (contactForm) {
+    if (contactForm && submitBtn) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -76,11 +76,24 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get form data
             const formData = new FormData(contactForm);
             
-            // Submit to Netlify
+            // Ensure form-name is included
+            if (!formData.has('form-name')) {
+                formData.append('form-name', 'contact');
+            }
+            
+            // Convert FormData to URL-encoded string
+            const encodedData = new URLSearchParams();
+            for (const [key, value] of formData.entries()) {
+                encodedData.append(key, value);
+            }
+            
+            // Submit to Netlify Forms
             fetch('/', {
                 method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
+                headers: { 
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: encodedData.toString()
             })
             .then(response => {
                 if (response.ok) {
@@ -93,14 +106,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         submitBtn.disabled = false;
                         submitBtn.value = 'Send Message';
+                        formStatus.textContent = '';
                     }, 3000);
                 } else {
-                    throw new Error('Form submission failed');
+                    // Try to get error details
+                    return response.text().then(text => {
+                        console.error('Form submission error:', text);
+                        throw new Error(`Server error: ${response.status}`);
+                    });
                 }
             })
             .catch(error => {
-                // Error
-                formStatus.textContent = '✗ Sorry, there was an error sending your message. Please try again or email me directly.';
+                // Error handling
+                console.error('Form submission error:', error);
+                formStatus.textContent = '✗ Sorry, there was an error sending your message. Please try again or email me directly at alanhakim491@gmail.com';
                 formStatus.className = 'mt-2 text-sm text-red-600 dark:text-red-400';
                 submitBtn.disabled = false;
                 submitBtn.value = 'Send Message';
