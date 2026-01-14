@@ -87,8 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 encodedData.append(key, value);
             }
             
+            // Get the current page URL for Netlify Forms submission
+            // For Netlify Forms, submit to the current page
+            const formAction = contactForm.getAttribute('action') || window.location.pathname || '/';
+            
             // Submit to Netlify Forms
-            fetch('/', {
+            fetch(formAction, {
                 method: 'POST',
                 headers: { 
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -96,7 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: encodedData.toString()
             })
             .then(response => {
-                if (response.ok) {
+                // Netlify Forms returns 200 on success, but also might redirect
+                // Check for success (200) or redirect (302)
+                if (response.ok || response.status === 200 || response.status === 302) {
                     // Success
                     formStatus.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
                     formStatus.className = 'mt-2 text-sm text-green-600 dark:text-green-400';
@@ -108,18 +114,30 @@ document.addEventListener('DOMContentLoaded', function() {
                         submitBtn.value = 'Send Message';
                         formStatus.textContent = '';
                     }, 3000);
+                } else if (response.status === 404) {
+                    // 404 means form endpoint not found - likely testing locally
+                    throw new Error('Form endpoint not found. This form only works when deployed to Netlify. Please deploy your site or test on the live Netlify URL.');
                 } else {
                     // Try to get error details
                     return response.text().then(text => {
-                        console.error('Form submission error:', text);
-                        throw new Error(`Server error: ${response.status}`);
+                        console.error('Form submission error response:', text);
+                        throw new Error(`Server error: ${response.status} - ${response.statusText}`);
                     });
                 }
             })
             .catch(error => {
                 // Error handling
                 console.error('Form submission error:', error);
-                formStatus.textContent = '✗ Sorry, there was an error sending your message. Please try again or email me directly at alanhakim491@gmail.com';
+                
+                // Provide helpful error message
+                let errorMessage = '✗ Sorry, there was an error sending your message.';
+                if (error.message.includes('404') || error.message.includes('not found')) {
+                    errorMessage += ' This form only works when deployed to Netlify. Please deploy your site or email me directly at alanhakim491@gmail.com';
+                } else {
+                    errorMessage += ' Please try again or email me directly at alanhakim491@gmail.com';
+                }
+                
+                formStatus.textContent = errorMessage;
                 formStatus.className = 'mt-2 text-sm text-red-600 dark:text-red-400';
                 submitBtn.disabled = false;
                 submitBtn.value = 'Send Message';
